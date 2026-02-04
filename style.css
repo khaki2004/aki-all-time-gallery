@@ -254,7 +254,7 @@ a:hover{ text-decoration: none; }
       rgba(0,0,0,0.7),
       rgba(0,0,0,0.7)
     ),
-    url("./Images.k.webp");
+    url("./Images/k.webp");
 
   background-size: cover;
   background-position: center top;
@@ -635,7 +635,7 @@ body.gallery-page{
       rgba(0,0,0,0.62) 55%,
       rgba(0,0,0,0.76) 100%
     ),
-    url("./Images.k.webp");
+    url("./Images/k.webp");
 
   /* 繰り返しなし */
   background-repeat: no-repeat, no-repeat;
