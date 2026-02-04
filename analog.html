@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Portfolio - アナログ・デジタルアート作品集</title>
+    <meta name="description" content="アナログイラスト、デジタルイラストを展示するアートポートフォリオサイト。" />
+    <meta name="keywords" content="アートポートフォリオ,イラスト,デジタルアート,鉛筆画、ペン画,水彩画,油彩画" />
+
+    <!-- メモ: アイコンフォント（Remix Icon） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" />
+
+    <!-- メモ: フォント（Google Fonts） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Playfair+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- メモ: この静的版では Tailwind は使わず、style.css にまとめています -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>アナログ | Art Portfolio</title>
+  </head>
+  <body class="gallery-page">
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a class="brand" href="./index.html">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span>Art Portfolio</span>
+        </a>
+
+        <!-- メモ: ここはReactの <Navbar /> を静的HTMLに置き換え -->
+        <nav class="navlinks" aria-label="Global navigation">
+          <a href="./index.html" class="">Home</a>
+          <a href="./analog.html" class="is-active">Analog</a>
+          <a href="./digital.html" class="">Digital</a>
+          <!-- <a href="./models.html" class="">3D Models</a>　-->
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-strip">
+        <div class="hero-strip__content">
+          <h1>Analog Illustration</h1>
+        </div>
+      </section>
+
+      <div class="scroll-container">
+        <div class="scroll-content">
+          <img src="./g.jpg" alt="">
+          <img src="./i.jpg" alt="">
+          <img src="./u.jpg" alt="">
+          <img src="./j.jpg" alt="">
+
+          <img src="./g.jpg" alt="">
+          <img src="./i.jpg" alt="">
+          <img src="./u.jpg" alt="">
+          <img src="./j.jpg" alt="">
+        </div>
+      </div>
+
+      <section class="gallery">
+        <div class="container">
+          <div class="gallery__grid" data-gallery>
+            <a class="artcard" data-desc="" href="./artwork.html?id=analog-1">  <!--data-desc=""に説明を記入-->
+              <div class="artcard__media">
+                <img src="./f.jpg" alt="Crocs" title="Crocs">
+              </div>
+              <div class="artcard__body">
+                <p class="artcard__title">Crocs</p>
+              </div>
+            </a>
+
+            <a class="artcard" data-desc="from @baraa_arts" href="./artwork.html?id=analog-2">
+              <div class="artcard__media">
+                <img src="./g.jpg" alt="ncllw">
+              </div>
+              <div class="artcard__body">
+                <p class="artcard__title">baraa_arts</p>
+              </div>
+            </a>
+
+            <a class="artcard" data-desc="" href="./artwork.html?id=analog-3">
+              <div class="artcard__media">
+                <img src="./h.jpg">
+              </div>
+              <div class="artcard__body">
+                <p class="artcard__title">Untitled</p>
+              </div>
+            </a>
+
+            <a class="artcard" data-desc="BUMP OF CHICKEN" href="./artwork.html?id=analog-4">
+              <div class="artcard__media">
+                <img src="./i.jpg" alt="BUMP OF CHICKEN,藤原基央">
+              </div>
+              <div class="artcard__body">
+                <p class="artcard__title">藤原基央</p>
+              </div>
+            </a>
+
+            <a class="artcard" data-desc="" href="./artwork.html?id=analog-5">
+              <div class="artcard__media">
+                <img src="./j.jpg" alt="yama">
+              </div>
+              <div class="artcard__body">
+                <p class="artcard__title">yama</p>
+              </div>
+            </a>
+
+            <a class="artcard" data-desc="" href="./artwork.html?id=analog-6">
+              <div class="artcard__media">
+                <img src="./s.jpg">
+              </div>
+              <div class="artcard__body">
+                <p class="artcard__title">Untitled</p>
+              </div>
+            </a>
+
+            <a class="artcard" data-desc="" href="./artwork.html?id=analog-7">
+              <div class="artcard__media">
+                <img src="./t.jpg">
+              </div>
+              <div class="artcard__body">
+                <p class="artcard__title">Untitled</p>
+              </div>
+            </a>
+
+            <a class="artcard" data-desc="" href="./artwork.html?id=analog-8">
+              <div class="artcard__media">
+                <img src="./u.jpg" alt="baraa_arts">
+              </div>
+              <div class="artcard__body">
+                <p class="artcard__title">baraa_arts</p>
+              </div>
+            </a>
+
+            <a class="artcard" data-desc="" href="./artwork.html?id=analog-9">
+              <div class="artcard__media">
+                <img src="./v.jpg">
+              </div>
+              <div class="artcard__body">
+                <p class="artcard__title">Untitled</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>© 2025 Art Portfolio</div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        const TYPE = "アナログイラスト";
+
+        const gallery = document.querySelector("[data-gallery]");
+        if (!gallery) return;
+
+        // クリック元（戻る用）
+        const FROM = window.location.href;
+
+        gallery.addEventListener("click", (e) => {
+          const card = e.target.closest(".artcard");
+          if (!card) return;
+
+          e.preventDefault();
+
+          const imgEl = card.querySelector("img");
+          const titleEl = card.querySelector(".artcard__title");
+
+          const img = imgEl ? imgEl.getAttribute("src") : "";
+          const title = titleEl ? titleEl.textContent.trim() : "";
+          const desc = card.dataset.desc || ""; // 作品ごとに保持している説明（今は空でOK）
+
+          // 戻る先を保存
+          sessionStorage.setItem("lastGalleryUrl", FROM);
+
+          // artwork.htmlへクエリ付きで遷移（安全にURL生成）
+          const url = new URL("./artwork.html", window.location.href);
+          url.searchParams.set("img", img);
+          url.searchParams.set("title", title);
+          url.searchParams.set("type", TYPE);
+          url.searchParams.set("desc", desc);
+          url.searchParams.set("from", FROM);
+
+          window.location.href = url.toString();
+        });
+      })();
+    </script>
+
+
+  </body>
+</html>

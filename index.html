@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Portfolio - アナログ・デジタルアート作品集</title>
+    <meta name="description" content="アナログイラスト、デジタルイラストを展示するアートポートフォリオサイト。" />
+    <meta name="keywords" content="アートポートフォリオ,イラスト,デジタルアート,鉛筆画,ペン画,水彩画,油彩画" />
+
+    <!-- メモ: アイコンフォント（Remix Icon） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" />
+
+    <!-- メモ: フォント（Google Fonts） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Playfair+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a class="brand" href="./index.html">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span>Art Portfolio</span>
+        </a>
+
+        <!-- メモ: ここはReactの <Navbar /> を静的HTMLに置き換え -->
+        <nav class="navlinks" aria-label="Global navigation">
+          <a href="./index.html" class="is-active">Home</a>
+          <a href="./analog.html" class="">Analog</a>
+          <a href="./digital.html" class="">Digital</a>
+          <!--<a href="./models.html" class="">3D Models</a> -->
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__bg" aria-hidden="true">
+          <img src="./Icon.png">
+          <div class="hero__overlay"></div>
+        </div>
+
+        <div class="hero__content">
+          <h1 class="hero__title1">Aki</h1>
+          <h2 class="hero__title2">All Time Gallery</h2>
+
+          <a class="btn btn--teal" href="./analog.html">
+            <span>作品を見る</span>
+            <span class="btn__icon" aria-hidden="true">
+              <i class="ri-arrow-right-line"></i>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <!-- CATEGORIES（元: categories map） -->
+      <section class="section" id="categories">
+        <div class="container">
+          <div class="section__title">
+            <h2>作品カテゴリ</h2>
+          </div>
+
+          <div class="grid grid--3">
+            <!-- メモ: カテゴリカード1 -->
+            <a class="card" href="./analog.html">
+              <div class="card__media">
+                <img src="./g.jpg">
+              </div>
+              <div class="card__body">
+                <div class="iconbox"><i class="ri-brush-line"></i></div>
+                <h3>Analog</h3>
+                <p>鉛筆画、ペン画</p>
+                <div class="card__cta">
+                  <span>詳しく見る</span>
+                  <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                </div>
+              </div>
+            </a>
+
+            <!-- メモ: カテゴリカード2 -->
+            <a class="card" href="./digital.html">
+              <div class="card__media">
+                <img src="./e.png">
+              </div>
+              <div class="card__body">
+                <div class="iconbox"><i class="ri-palette-line"></i></div>
+                <h3>Digital</h3>
+                <p>デジタルペイント</p>
+                <div class="card__cta">
+                  <span>詳しく見る</span>
+                  <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="social-hub__content">
+        <h2>制作の記録</h2>
+        <p>
+          作品の過程やラフ、3Dモデルの試作などは<br />
+          各SNSで断片的に公開しています。
+        </p>
+
+        <!--<div class="social-links">
+           メモ: 実際のURLに差し替え
+          <a href="@GiovanniYggd" class="social-btn" aria-label="X">
+            <i class="ri-twitter-x-line"></i>
+            <span>X / Twitter</span>
+          </a>
+
+          <a href="#" class="social-btn" aria-label="Instagram">
+            <i class="ri-instagram-line"></i>
+            <span>Instagram</span>
+          </a>
+        </div> -->
+      </div> 
+    </main>
+      <footer class="footer">
+        <div class="container footer__inner">
+          <div>© 2025 Art Portfolio</div>
+          
+        </div>
+      </footer>
+  </body>
+</html>
