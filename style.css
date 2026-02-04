@@ -488,7 +488,6 @@ a:hover{ text-decoration: none; }
 .figure{
   border-radius: 18px;
   overflow:hidden;
-  background: #f3f4f6;
   cursor: default;
   position: relative;
 }
