@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Playfair+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- メモ: この静的版では Tailwind は使わず、style.css にまとめています -->
-    <link rel="stylesheet" href="./Images.style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./Images.Icon.webp">
 
 
@@ -25,17 +25,17 @@
   <body class="gallery-page">
     <header class="navbar">
       <div class="container navbar__inner">
-        <a class="brand" href="./Images.index.html">
+        <a class="brand" href="./index.html">
           <span class="brand__dot" aria-hidden="true"></span>
           <span>Art Portfolio</span>
         </a>
 
         <!-- メモ: ここはReactの <Navbar /> を静的HTMLに置き換え -->
         <nav class="navlinks" aria-label="Global navigation">
-          <a href="./Images.index.html" class="">Home</a>
-          <a href="./Images.analog.html" class="">Analog</a>
-          <a href="./Images.digital.html" class="is-active">Digital</a>
-          <!-- <a href="./Images.models.html" class="">3D Models</a> -->
+          <a href="./index.html" class="">Home</a>
+          <a href="./analog.html" class="">Analog</a>
+          <a href="./digital.html" class="is-active">Digital</a>
+          <!-- <a href="./models.html" class="">3D Models</a> -->
         </nav>
       </div>
     </header>
@@ -64,7 +64,7 @@
       <section class="gallery">
         <div class="container">
           <div class="gallery__grid" data-gallery>
-            <a class="artcard" data-desc="from @baraa_arts" href="./Images.artwork.html?id=digital-1">
+            <a class="artcard" data-desc="from @baraa_arts" href="./artwork.html?id=digital-1">
               <div class="artcard__media">
                 <img loading="lazy" src="./Images.a.webp" alt="baraa_arts">
               </div>
@@ -73,7 +73,7 @@
               </div>
             </a>
 
-            <a class="artcard" data-desc="King Gnu" href="./Images.artwork.html?id=digital-2">
+            <a class="artcard" data-desc="King Gnu" href="./artwork.html?id=digital-2">
               <div class="artcard__media">
                 <img loading="lazy" src="./Images.b.webp" alt="常田大希">
               </div>
@@ -82,7 +82,7 @@
               </div>
             </a>
 
-            <a class="artcard" data-desc="" href="./Images.artwork.html?id=digital-3">
+            <a class="artcard" data-desc="" href="./artwork.html?id=digital-3">
               <div class="artcard__media">
                 <img loading="lazy" src="./Images.c.webp" alt="James Harden">
               </div>
@@ -91,7 +91,7 @@
               </div>
             </a>
 
-            <a class="artcard" data-desc="" href="./Images.artwork.html?id=digital-4">
+            <a class="artcard" data-desc="" href="./artwork.html?id=digital-4">
               <div class="artcard__media">
                 <img loading="lazy" src="./Images.d.webp">
               </div>
@@ -100,7 +100,7 @@
               </div>
             </a>
 
-            <a class="artcard" data-desc="" href="./Images.artwork.html?id=digital-5">
+            <a class="artcard" data-desc="" href="./artwork.html?id=digital-5">
               <div class="artcard__media">
                 <img loading="lazy" src="./Images.e.webp" alt="Blooming Paint">
               </div>
@@ -109,7 +109,7 @@
               </div>
             </a>
 
-            <a class="artcard" data-desc="" href="./Images.artwork.html?id=digital-6">
+            <a class="artcard" data-desc="" href="./artwork.html?id=digital-6">
               <div class="artcard__media">
                 <img loading="lazy" src="./Images.p.webp" alt="Kobe Bryant">
               </div>
@@ -118,7 +118,7 @@
               </div>
             </a>
 
-            <a class="artcard" data-desc="" href="./Images.artwork.html?id=digital-7">
+            <a class="artcard" data-desc="" href="./artwork.html?id=digital-7">
               <div class="artcard__media">
                 <img loading="lazy" src="./Images.y.webp">
               </div>
@@ -127,7 +127,7 @@
               </div>
             </a>
 
-            <a class="artcard" data-desc="" href="./Images.artwork.html?id=digital-8">
+            <a class="artcard" data-desc="" href="./artwork.html?id=digital-8">
               <div class="artcard__media">
                 <img loading="lazy" src="./Images.q.webp">
               </div>
@@ -136,7 +136,7 @@
               </div>
             </a>
 
-            <a class="artcard" data-desc="" href="./Images.artwork.html?id=digital-9">
+            <a class="artcard" data-desc="" href="./artwork.html?id=digital-9">
               <div class="artcard__media">
                 <img loading="lazy" src="./Images.r.webp">
               </div>
@@ -181,7 +181,7 @@
           sessionStorage.setItem("lastGalleryUrl", FROM);
 
           // artwork.htmlへクエリ付きで遷移（安全にURL生成）
-          const url = new URL("./Images.artwork.html", window.location.href);
+          const url = new URL("./artwork.html", window.location.href);
           url.searchParams.set("img", img);
           url.searchParams.set("title", title);
           url.searchParams.set("type", TYPE);

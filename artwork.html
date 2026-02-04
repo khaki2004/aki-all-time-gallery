@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Playfair+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./Images.style.css" />
-    <link rel="icon" href="./Images.Icon.webp">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./Icon.webp">
 
 
     <title>Artwork Detail | Art Portfolio</title>
@@ -19,22 +19,22 @@
   <body>
     <header class="navbar">
       <div class="container navbar__inner">
-        <a class="brand" href="./Images.index.html">
+        <a class="brand" href="./index.html">
           <span class="brand__dot" aria-hidden="true"></span>
           <span>Art Portfolio</span>
         </a>
         <nav class="navlinks" aria-label="Global navigation">
-          <a href="./Images.index.html" class="is-active">Home</a>
-          <a href="./Images.analog.html" class="">Analog</a>
-          <a href="./Images.digital.html" class="">Digital</a>
-          <!--<a href="./Images.models.html" class="">3D Models</a> -->
+          <a href="./index.html" class="is-active">Home</a>
+          <a href="./analog.html" class="">Analog</a>
+          <a href="./digital.html" class="">Digital</a>
+          <!--<a href="./models.html" class="">3D Models</a> -->
         </nav>
       </div>
     </header>
 
     <main class="detail">
       <div class="container">
-        <a class="backlink" id="backlink" href="./Images.index.html">
+        <a class="backlink" id="backlink" href="./index.html">
           <i class="ri-arrow-left-line" aria-hidden="true"></i>
           <span>ホームに戻る</span>
         </a>
@@ -101,7 +101,7 @@
           from ||
           sessionStorage.getItem("lastGalleryUrl") ||
           document.referrer ||
-          "./Images.index.html";
+          "./index.html";
 
         if (backLink) {
           backLink.href = lastGalleryUrl;
