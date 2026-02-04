@@ -575,7 +575,7 @@ a:hover{ text-decoration: none; }
 .scroll-content {
   display: flex;
   gap: 20px; /* 画像の間隔 */
-  animation: scroll 30s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 .scroll-content img {
