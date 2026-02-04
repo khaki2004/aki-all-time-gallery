@@ -254,7 +254,7 @@ a:hover{ text-decoration: none; }
       rgba(0,0,0,0.7),
       rgba(0,0,0,0.7)
     ),
-    url("./k.jpg");
+    url("./k.webp");
 
   background-size: cover;
   background-position: center top;
@@ -619,14 +619,14 @@ a:hover{ text-decoration: none; }
 }
 /* =========================================
    Gallery pages (analog / digital)
-   単一背景（k.jpgのみ）＋暗幕（現状の透明度感）
+   単一背景（k.webpのみ）＋暗幕（現状の透明度感）
    ========================================= */
 
 body.gallery-page{
   /* 背景のベース色（画像が読み込めない場合の保険） */
   background-color: var(--bg);
 
-  /* 背景は「暗幕グラデ + k.jpg 1枚」だけ */
+  /* 背景は「暗幕グラデ + k.webp 1枚」だけ */
   background-image:
     linear-gradient(
       to bottom,
@@ -635,7 +635,7 @@ body.gallery-page{
       rgba(0,0,0,0.62) 55%,
       rgba(0,0,0,0.76) 100%
     ),
-    url("./k.jpg");
+    url("./k.webp");
 
   /* 繰り返しなし */
   background-repeat: no-repeat, no-repeat;
